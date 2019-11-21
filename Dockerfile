@@ -1,5 +1,7 @@
 FROM registry.redhat.io/openjdk/openjdk-8-rhel8
 
+USER root
+
 RUN yum -y install \
   ruby wget\
   && yum clean all
